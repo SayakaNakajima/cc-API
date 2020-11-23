@@ -21,7 +21,6 @@ import { Factory, Seeder } from 'typeorm-seeding'
 import { Connection } from 'typeorm'
 import Glyph from '../entities/glyph'
 import glyphData from './glyphs.json'
-console.log(glyphData);
 /**
  * FIXME
  * - Populate the database with users defined in `src/seeds/users.json` 
