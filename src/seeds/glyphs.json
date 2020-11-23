@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "glyph": "一",
+        "radical": "一",
+        "strokes": 1,
+        "test_grade": "１０級"
+    },
+    {
+        "id": 2,
+        "glyph": "右",
+        "radical": "口",
+        "strokes": 5,
+        "test_grade": "１０級"        
+    },
+    {
+        "id": 3,
+        "glyph": "左",
+        "radical": "工",
+        "strokes": 5,
+        "test_grade": "１０級"        
+    },
+    {
+        "id": 4,
+        "glyph": "究",
+        "radical": "穴",
+        "strokes": 7,
+        "test_grade": "８級"        
+    }
+]
