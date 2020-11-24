@@ -5,7 +5,7 @@ import BaseController from "../common/controller";
 
 
 class GlyphController extends BaseController {
-public path: string = "/users";
+public path: string = "/glyphs";
   public router: Router;
 
   protected manager: GryphManager;
@@ -22,10 +22,11 @@ public path: string = "/users";
   protected createRouter(): Router {
     const router = Router();
 
-    router.get("/:id", this.post);
+    // router.get("/", this.get);
+    router.get("/:id", this.get);
     router.post("/", this.post);
-    router.patch("/:id", this.post);
-    router.delete("/:id", this.post);
+    router.patch("/:id", this.patch);
+    router.delete("/:id", this.delete);
 
     return router;
   }
@@ -38,7 +39,7 @@ public path: string = "/users";
       const { id } = req.params;
       const glyph = await this.manager.getGlyph(id);
       if (!glyph) {
-        res.status(404).send({ error: "user not found" });
+        res.status(403).send({ error: "user not found" });
         return;
       }
 
@@ -53,6 +54,7 @@ public path: string = "/users";
    */
   protected post = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
+      console.log(req.body);
       const glyphDetails = req.body;
       const glyph = await this.manager.createGlyph(glyphDetails);
 

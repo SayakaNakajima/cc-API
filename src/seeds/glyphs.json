@@ -11,20 +11,27 @@
         "glyph": "右",
         "radical": "口",
         "strokes": 5,
-        "test_grade": "１０級"        
+        "test_grade": "１０級"
     },
     {
         "id": 3,
         "glyph": "左",
         "radical": "工",
         "strokes": 5,
-        "test_grade": "１０級"        
+        "test_grade": "１０級"
     },
     {
         "id": 4,
         "glyph": "究",
         "radical": "穴",
         "strokes": 7,
-        "test_grade": "８級"        
+        "test_grade": "８級"
+    },
+    {
+        "id": 5,
+        "glyph": "研",
+        "radical": "石",
+        "strokes": 9,
+        "test_grade": "８級"
     }
 ]
